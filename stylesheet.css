@@ -81,6 +81,22 @@ div#container {
                 background-color: white;
                 padding: 5px;
             }
+
+            h2 {
+                color: red;
+                text-transform: uppercase;
+                border-bottom: 2px dotted red;
+                font-weight: bold;
+            }
+
+            p {
+                font-size: 12px;
+
+                span {
+                    font-weight: bold;
+                    font-size: 110%;
+                }
+            }
         }
 
     }
