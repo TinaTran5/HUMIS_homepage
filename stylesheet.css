@@ -53,7 +53,7 @@ div#container {
             padding: 50px;
             min-height: 500px;
 
-            nav {
+            nav.left-side {
                 float: left;
                 width: 30%;
 
@@ -80,22 +80,38 @@ div#container {
                 float: right;
                 background-color: white;
                 padding: 5px;
-            }
 
-            h2 {
-                color: red;
-                text-transform: uppercase;
-                border-bottom: 2px dotted red;
-                font-weight: bold;
-            }
-
-            p {
-                font-size: 12px;
-
-                span {
+                h2 {
+                    color: red;
+                    text-transform: uppercase;
+                    border-bottom: 2px dotted red;
                     font-weight: bold;
-                    font-size: 110%;
                 }
+
+                p {
+                    font-size: 12px;
+
+                    span {
+                        font-weight: bold;
+                        font-size: 110%;
+                    }
+
+                    &.learn-more {
+                        text-align: right;
+
+                        a {
+                            color: red;
+                            text-decoration: none;
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+            div.clear-float {
+                clear: both;
             }
         }
 
