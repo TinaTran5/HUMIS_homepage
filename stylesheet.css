@@ -12,6 +12,7 @@ div#container {
 
     /* > direct descendent */
     /* * every item */
+
     > * {
         /*border: 1px dotted blue;*/
 
@@ -28,6 +29,7 @@ div#container {
 
     section.content {
         background: url('files/uofu_medallion_rt.gif') bottom right no-repeat;
+
         div.nav {
             text-align: right;
             padding: 5px 15px 0 0;
@@ -58,10 +60,12 @@ div#container {
                 targets a nav element whose class is nav
                and whose class is bottom nav
             */
+
             &.bottom-nav {
                 a {
                     text-transform: lowercase;
                 }
+
                 font-size: 10px;
             }
         }
@@ -162,6 +166,7 @@ div#container {
                 }
             }
         }
+
         padding: 10px;
 
     }
