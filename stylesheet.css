@@ -1,5 +1,9 @@
+body {
+    margin: 0;
+}
+
 div#container {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     min-height: 500px;
     /*width: 500px;*/
     min-width: 900px;
@@ -8,28 +12,33 @@ div#container {
 
     /* > direct descendent */
     /* * every item */
-
     > * {
-        border: 1px dotted blue;
-        margin: 5px;
+        /*border: 1px dotted blue;*/
 
         > img {
             width: 100%;
         }
     }
 
+    header, section.sub-header {
+        img {
+            display: block;
+        }
+    }
+
     section.content {
         background: url('files/uofu_medallion_rt.gif') bottom right no-repeat;
-
         div.nav {
             text-align: right;
-            padding-right: 15px;
-            font-size: 12px;
+            padding: 5px 15px 0 0;
+            font-size: 14px;
+            letter-spacing: 1px;
 
             a {
                 color: black;
                 text-decoration: none;
                 text-transform: uppercase;
+
 
                 &:hover {
                     text-decoration: underline;
@@ -41,7 +50,7 @@ div#container {
             }
 
             span:after {
-                content: "|";
+                content: " |";
                 margin: 0 5px;
             }
 
@@ -61,7 +70,7 @@ div#container {
             background-color: #bec4a1;
             border-radius: 15px;
             margin: 15px 10px 70px;
-            padding: 20px;
+            padding: 25px 20px 100px 20px;
             min-height: 500px;
             position: relative;
 
@@ -72,7 +81,7 @@ div#container {
                 margin-left: 50px;
 
                 a {
-                    border-bottom: 1px solid black;
+                    border-bottom: 2px solid darkolivegreen;
                     display: block;
                     color: black;
                     font-size: 11px;
@@ -92,17 +101,22 @@ div#container {
                 width: 65%;
                 float: right;
                 background-color: white;
-                padding: 10px;
+                padding: 20px;
 
                 h2 {
-                    color: red;
-                    border-bottom: 2px dotted red;
+                    color: darkolivegreen;
+                    padding-bottom: 10px;
+                    border-bottom: 2px dotted darkred;
                     text-transform: uppercase;
                     font-weight: normal;
+                    margin-bottom: 10px;
+                    letter-spacing: 2px;
                 }
 
                 p {
                     font-size: 12px;
+                    margin-top: 0;
+                    /*border: 1px solid red;*/
 
                     span {
                         font-weight: bold;
@@ -121,7 +135,7 @@ div#container {
                     text-transform: uppercase;
 
                     a {
-                        color: red;
+                        color: darkred;
                         text-decoration: none;
 
                         &:hover {
@@ -144,10 +158,12 @@ div#container {
 
                 img {
                     display: block;
-                    margin: 10px 0;
+                    min-width: 240px;
                 }
             }
         }
+        padding: 10px;
+
     }
 
     footer {
@@ -156,5 +172,6 @@ div#container {
         font-size: 10px;
         text-align: center;
         padding: 8px;
+        letter-spacing: 1px;
     }
 }
